@@ -10,17 +10,26 @@
 <body>
   <div class="container-div w-screen h-screen relative">
     <div id="particles-js" class="w-screen h-screen bg-gradient-to-b from-[#220E24] to-[#342056]"></div>
-    <img class="logo absolute w-10 h-12 m-4 sm:w-20 sm:h-24" src="assets/logo-white.png" alt="Logo">
-    <div class="header-content w-[80%] flex items-center justify-center">
-      <img class="w-72 min-h-80 sm:w-96 sm:min-h-96" src="assets/logo.png" alt="Logo">
+    <img class="cursor-pointer logo absolute w-10 h-12 m-4 lg:mx-16 md:w-16 md:h-20" src="assets/logo-white.png" alt="Logo">
+
+    <div class="header-content w-[80%] flex mt-[-2rem] justify-center">
+      <img class="w-44 min-h-56 md:w-80 md:min-h-96 lg:scale-110" src="assets/logo.png" alt="Logo">
     </div>
-    <div class="header-text w-[70%] absolute top-[45%] flex items-center justify-start pr-32 ml-10 md:ml-60">
-      <h1 class="text-white text-2xl font-bold font-sans md:text-6xl">Sijin Saji John</h1>
-    </div>
-    <div class="header-text w-[70%] absolute top-[50%] flex items-center justify-start pr-32 ml-10 md:ml-60">
-      <h1 class="text-white text-sm font-sans md:text-3xl">Frontend Developer</h1>
+    <div class="header-text absolute top-[40%] lg:top-[38%] ml-4 sm:ml-16 md:left-[15%] flex flex-col items-start justify-center px-4 md:px-0 md:w-[70%] md:ml-auto md:mr-auto">
+      <h1 class="text-white text-3xl font-bold font-sans md:text-4xl lg:text-6xl">Sijin Saji John</h1>
+      <h1 class="text-white text-lg font-sans md:text-xl mt-2 md:mt-4 lg:text-3xl">Frontend Developer</h1>
+      <div class="about-me-btn">
+      <button class="header-btn bg-gradient-to-tr from-[#790BC2] to-[#E500F3] m-[-1rem] p-2 px-4 rounded-md mt-5 text-white font-bold text-lg xl:text-2xl scale-75 md:px-6 md:py lg:px-10">About Me</button>
+      <span class="size-8 lg:size-15 lg:ml-[-1.5rem] right-arrow text-white hidden z-10  md:block md:mt-[2.5rem]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </span>
+
+      </div>
     </div>
   </div>
+  
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="particles.js"></script>
