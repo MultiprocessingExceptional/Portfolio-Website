@@ -1,36 +1,58 @@
+
 canvas {
     display: block;
     vertical-align: bottom;
   }
   
-#particles-js {
+  #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
-}
-
-.header-content {
+  }
+  
+  .header-content {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .scroll {
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 10px;
+		left: 12px;
+		width: 12px;
+		height: 12px;
+		border-left: 2px solid #fff;
+  	    border-bottom: 2px solid #fff;
+		transform: rotate(-45deg);
+	}
 }
 
-.about-me-btn{
-    display: flex;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
 }
 
-.about-me-btn:hover{
-    transform: scale(1.1);
-}
-
-.right-arrow{
-    transform: scale(1.3);
-    margin-left: -1.4rem;
-}
-
-.about-me-btn:hover .right-arrow{
-    margin-left: -1rem;
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
 }
