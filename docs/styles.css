@@ -16,6 +16,110 @@ canvas {
     height: 100%;
   }
   
+  body{
+    overflow-x: hidden;
+  }
+
+  .container-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .burger-wrapper {
+    cursor: pointer;
+  }
+  #meny {
+      background: #2A163C;
+      position: fixed;
+      right: 0;
+      transition-timing-function: cubic-bezier(10,2,3,1);
+      transform: translateX(50rem);
+      top: 0;
+      z-index: 0;
+      transition: 0.5s;
+  }
+  #menyAvPaa {
+      display: none;
+  }
+  
+  #menyAvPaa:checked ~ #meny {
+      transform: translateX(0rem);
+  }
+  
+  #burger {
+      position: absolute;
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 1rem;
+      top: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  
+  #burger > div {
+      height: 2px;
+      background-color: #fff;
+      transition: 0.5s;
+      z-index: 999;
+  }
+  
+  #menyAvPaa:checked ~ #burger > div {
+    background-color: #fff;
+  }
+  
+  #menyAvPaa:checked ~ #burger > div:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+  }
+  #menyAvPaa:checked ~ #burger > div:nth-child(2) {
+      opacity: 0;
+  }
+  #menyAvPaa:checked ~ #burger > div:nth-child(3) {
+      transform: translateY(-13px) rotate(-45deg);
+  }
+  
+
+  header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  main, .section1, .section2, footer{
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .ripple{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+      transform: scale(4);
+      opacity: 0;
+  }
+}
+
+@keyframes ripple-animation {
+  to {
+      transform: scale(4);
+      opacity: 0;
+  }
+}
   .header-content {
     position: absolute;
     top: 35%;
@@ -62,3 +166,23 @@ canvas {
 		transform: translate(0);
 	}
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #220E24, #342056);
+    border-radius: 1  0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #6702b9;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
