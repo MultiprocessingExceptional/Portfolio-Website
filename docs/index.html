@@ -37,9 +37,9 @@
       <img class="cursor-pointer logo absolute w-10 h-12 m-4 md:m-10 md:w-16 md:h-20 z-50" src="assets/logo-white.png"
         alt="Logo">
 
-        <div class="header-content w-[80%] flex justify-center">
-          <img class="w-44 min-h-56 lg:w-64 lg:min-h-80 mt-10 animate-bounce-1rem" src="assets/logo.png" alt="Logo">
-      </div>      
+      <div class="header-content w-[80%] flex justify-center">
+        <img class="w-44 min-h-56 lg:w-64 lg:min-h-80 mt-10 animate-bounce-1rem" src="assets/logo.png" alt="Logo">
+      </div>
 
       <div
         class="header-content text-center text-white mt-60 lg:mt-72 w-screen flex justify-center items-center flex-col gap-1">
@@ -66,7 +66,34 @@
 
     <!-- Main Start -->
     <main>
-      <div class="main-section w-screen h-screen bg-white"></div>
+      <div class="main-section w-screen h-screen bg-white my-5 lg:my-10 text-center">
+        <h1 class="text-[#2E1A44] text-2xl lg:text-4xl font-medium">About Me</h1>
+        <div class="about-section flex items-center flex-wrap mx-5 mt-5 md:mx-20">
+          <div class="profile-image w-screen border-2 border-[#757575] p-2 h-auto md:w-[30%] mx-5"><img src="assets/profile.jpeg" alt=""></div>
+          <div class="text-content w-screen h-20 md:flex-1 md:h-auto m-5 text-justify flex-col justify-center">
+            <div class="profile-text">As a passionate and innovative front-end
+              developer, I specialize in creating visually stunning and highly functional user interfaces. With a strong
+              foundation in HTML, CSS, and JavaScript, I bring designs to life, ensuring a seamless and engaging user
+              experience across various devices and platforms. My expertise extends to modern frameworks like React and
+              Angular, allowing me to build dynamic and responsive web applications. I thrive on collaborating with
+              designers and back-end developers to deliver polished, high-quality products. Constantly staying updated
+              with the latest industry trends and best practices, I am dedicated to continuous learning and improvement,
+              making sure my skills and techniques are always at the forefront of web development.</div>
+              <div id="text-container flex flex-row">
+                <div id="text-container" class="flex flex-col md:flex-row items-center justify-center mt-5 text-xl font-bold text-[#757575] gap-2">
+                  <h2>I AM A</h2>
+                  <div id="flip">
+                    <div class="flip-item"><div class="text-center">CREATIVE</div></div>
+                    <div class="flip-item"><div class="text-center">COLLABORATIVE</div></div>
+                    <div class="flip-item"><div class="text-center">PASSIONATE</div></div>
+                  </div>
+                  <h2>DEVELOPER</h2>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
     </main>
     <!-- Main end -->
   </div>
