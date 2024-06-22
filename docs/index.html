@@ -14,7 +14,7 @@
 
 <body>
   <!-- Header Start -->
-  <div class="container-div">
+  <div class="container-div" style="background: linear-gradient(to bottom, #220E24 ,#342056)">
     <nav class="relative z-20 sm:hidden mr-2">
       <input type="checkbox" id="menyAvPaa">
       <label id="burger" for="menyAvPaa">
@@ -32,8 +32,7 @@
     </nav>
 
     <header>
-      <div id="particles-js" class="w-screen h-screen"
-        style="background: linear-gradient(to bottom, #220E24, #342056);"></div>
+      <div id="particles-js" class="w-screen h-screen"></div>
       <img class="cursor-pointer logo absolute w-10 h-12 m-4 md:m-10 md:w-16 md:h-20 z-50" src="assets/logo-white.png"
         alt="Logo">
 
@@ -66,32 +65,44 @@
 
     <!-- Main Start -->
     <main>
-      <div class="main-section w-screen h-screen bg-white my-5 lg:my-10 text-center">
-        <h1 class="text-[#2E1A44] text-2xl lg:text-4xl font-medium">About Me</h1>
+      <div class="main-section text-center w-screen h-screen pt-6">
+        <h3 class="title text-slate-200 text-sm lg:text-lg lg:mt-5 lg:mb-2">Get To Know More</h3>
+        <h1 class="title text-white text-3xl mb-2 lg:text-5xl font-semibold lg:mb-10">About Me</h1>
         <div class="about-section flex items-center flex-wrap mx-5 mt-5 md:mx-20">
-          <div class="profile-image w-screen border-2 border-[#757575] p-2 h-auto md:w-[30%] mx-5"><img src="assets/profile.jpeg" alt=""></div>
-          <div class="text-content w-screen h-20 md:flex-1 md:h-auto m-5 text-justify flex-col justify-center">
-            <div class="profile-text">As a passionate and innovative front-end
+          <div class="profile-image w-screen border-2 rounded-lg border-slate-200 p-2 h-auto md:w-[30%] mx-5"><img src="assets/profile.jpeg" class="rounded-lg" alt=""></div>
+          <div class="text-content w-screen h-20 md:flex-1 md:h-auto m-5 text-justify flex-col">
+            <div class="about-containers flex text-sm md:flex-row gap-2 mb-2 lg:text-[1rem] lg:gap-10 lg:mb-5">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon size-10"
+                />
+                <h3>Experience</h3>
+                <p>2+ years Frontend Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon size-10"
+                />
+                <h3>Education</h3>
+                <p>Pursuing BCA</p>
+              </div>
+            </div>
+            <div class="profile-text2 block lg:hidden justify-center text-white">As a passionate and innovative front-end
               developer, I specialize in creating visually stunning and highly functional user interfaces. With a strong
               foundation in HTML, CSS, and JavaScript, I bring designs to life, ensuring a seamless and engaging user
               experience across various devices and platforms. My expertise extends to modern frameworks like React and
-              Angular, allowing me to build dynamic and responsive web applications. I thrive on collaborating with
-              designers and back-end developers to deliver polished, high-quality products. Constantly staying updated
-              with the latest industry trends and best practices, I am dedicated to continuous learning and improvement,
-              making sure my skills and techniques are always at the forefront of web development.</div>
-              <div id="text-container flex flex-row">
-                <div id="text-container" class="flex flex-col md:flex-row items-center justify-center mt-5 text-xl font-bold text-[#757575] gap-2">
-                  <h2>I AM A</h2>
-                  <div id="flip">
-                    <div class="flip-item"><div class="text-center">CREATIVE</div></div>
-                    <div class="flip-item"><div class="text-center">COLLABORATIVE</div></div>
-                    <div class="flip-item"><div class="text-center">PASSIONATE</div></div>
-                  </div>
-                  <h2>DEVELOPER</h2>
-                </div>
-              </div>
+              Angular, allowing me to build dynamic and responsive web applications.
           </div>
-
+            <div class="profile-text hidden lg:block justify-center text-white">As a passionate and innovative front-end
+              developer, I specialize in creating visually stunning and highly functional user interfaces. With a strong
+              foundation in HTML, CSS, and JavaScript, I bring designs to life, ensuring a seamless and engaging user
+              experience across various devices and platforms. My expertise extends to modern framework like React, allowing me to build dynamic and responsive web applications. <br><br>I am dedicated to continuous learning and improvement,
+              making sure my skills and techniques are always at the forefront of web development.</div>
+          </div>
         </div>
       </div>
     </main>
